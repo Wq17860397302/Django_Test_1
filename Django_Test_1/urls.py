@@ -26,5 +26,7 @@ urlpatterns = [
     # path('news/', views.news),
     # # 用户登录
      path('login/', views.login),
+     path('news/', views.news),
+     path('sign_in/', views.sign_in),
 
 ]
