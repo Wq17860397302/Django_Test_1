@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>模板与法学系</h1>
+<div>{{ n1 }}</div>
+<div>{{ n2 }}</div>
+<div>
+    {% for item in n2 %}
+        <span>{{ item }}</span>
+    {% endfor %}
+</div>
+<hr/>
+<h4>获取字典内容</h4>
+{{ n3 }}
+{{ n3.name }}
+{{ n3.salary }}
+{{ n3.role }}
+<div>
+    {% for foo in n3.values %}
+        <li>{{ foo }}</li>
+    {% endfor %}
+</div>
+<div>
+    {% for foo in n3.keys %}
+        <li>{{ foo }}</li>
+    {% endfor %}
+</div>
+<div>
+    {% for k,v in n3.items  %}
+        <li>{{ k }}=={{ v }}</li>
+    {% endfor %}
+</div>
+<h4>获取列表中嵌入的字典内容</h4>
+<hr/>
+{{ n4.1 }}
+{{ n4.1.name }}
+<hr/>
+{% for item in n4 %}
+    {% for foo1,foo2 in item.items %}
+        <span>{{ foo1 }}=={{ foo2 }}</span>
+    {% endfor %}
+{% endfor %}
+<hr/>
+{% if n1 == "王群" %}
+    <h1>hahhhahha</h1>
+{% else %}
+    <h1>123123123</h1>
+
+{% endif %}
+</body>
+</html>
