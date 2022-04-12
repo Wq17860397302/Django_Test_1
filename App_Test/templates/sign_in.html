@@ -60,18 +60,6 @@
         </div>
 
         <div>
-            {#            <div class="form-check " no-label-float="left">#}
-            {#                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">#}
-            {#                <label class="form-check-label" for="flexRadioDefault1">#}
-            {#                    我是学生#}
-            {#                </label>#}
-            {#            </div>#}
-            {#            <div class="form-check " no-label-float="right">#}
-            {#                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>#}
-            {#                <label class="form-check-label" for="flexRadioDefault2">#}
-            {#                    我是老师#}
-            {#                </label>#}
-            {#            </div>#}
             <select class="form-select" aria-label="Default select example">
                 <option selected>选择您的身份</option>
                 <option value="1">我是学生</option>
@@ -83,9 +71,10 @@
         </div>
         <button type="submit" class="btn btn-primary" style="display: block;margin: 0 auto"
         ">注册</button>
-        <div id="LoginHelp" class="form-text" style="text-align: center">已经注册完毕？点击登录！</div>
+        <div id="LoginHelp" class="form-text" style="text-align: center" onclick="LoginHelp()">已经注册完毕？点击登录！</div>
     </form>
 
 </div>
+<script src="/static/js/sign_in.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@ from App_Test import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("",views.login,name="login"),
     # path('index/', views.index),
     # path('user/list/', views.user_list),
     # path('user/list/', views.user_add),
@@ -27,6 +28,6 @@ urlpatterns = [
     # # 用户登录
      path('login/', views.login),
      path('news/', views.news),
-     path('sign_in/', views.sign_in),
+     path('/sign_in/', views.sign_in,name="sign_in"),
 
 ]
